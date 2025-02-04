@@ -9,3 +9,11 @@
     @apply flex items-center h-16 pl-4 border border-[#68686868] rounded-md mb-5 text-xl cursor-pointer transition-all transform duration-400 ease-in-out hover:bg-gray-300 hover:scale-103;
   }
 }
+
+.correct {
+  @apply border-green-200 bg-green-200;
+}
+
+.wrong {
+  @apply border-red-200 bg-red-500;
+}
