@@ -47,6 +47,8 @@ const Quiz = () => {
                 option.current.classList.remove("wrong");
                 return null;
             })
+        } else {
+            alert("Silahkan Pilih Jawaban Terlebih Dahulu!")
         }
 
     };
