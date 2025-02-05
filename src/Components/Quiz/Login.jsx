@@ -24,12 +24,12 @@ const Login = ({ setNama, setQuiz }) => {
     };
 
     return (
-        <div className=' bg-amber-500 h-60 m-auto rounded-2xl shadow-gray-200 shadow-sm'>
+        <div className=' bg-amber-500 h-60 m-auto rounded-2xl shadow-gray-200 shadow-sm mx-3'>
             <div className='h-60 px-10 gap-5 bg-blue-200 justify-center items-center flex flex-col rounded-2xl font-bold'>
                 <h1 className='text-sky-500 text-xl '>Sebelum Memulai, Silahkan Login!</h1>
                 <hr className='h-0.5 -mt-2 mb-3 bg-gray-500 w-full' />
                 <div className='flex flex-row gap-5'>
-                    <h1 className='py-1 text-sky-500'>Masukkan Namamu :</h1>
+                    <h1 className='py-1 text-sky-500'>Nama:</h1>
                     <input
                         ref={inputRef}
                         className='border-2 border-blue-400 outline-none rounded-md px-2 py-1 transition-all duration-300'

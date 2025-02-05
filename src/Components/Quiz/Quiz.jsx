@@ -75,7 +75,7 @@ const Quiz = ({ nama, setQuiz }) => {
                     <li ref={option4} onClick={(e) => { checkAns(e, 4) }}>{question.option4}</li>
 
                 </ul>
-                <button onClick={next} className='px-4 cursor-pointer py-2 bg-sky-500 w-42 font-semibold text-white rounded-md m-auto transition-all duration-300 ease-in-out hover:bg-sky-600 hover:scale-105'>{index === data.length - 1 ? "Finish?" : "Next"} &gt;&gt;</button>
+                <button onClick={next} className='px-4 cursor-pointer py-2 bg-sky-500 w-42 font-semibold text-white rounded-md flex justify-center m-auto transition-all duration-300 ease-in-out hover:bg-sky-600 hover:scale-105'>{index === data.length - 1 ? "Finish?" : "Next"} &gt;&gt;</button>
                 <div className='m-auto mt-2 '>{index + 1} of {data.length} questions</div></>}
 
             {result ? <>
