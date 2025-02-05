@@ -22,7 +22,7 @@ const Login = ({ setNama, setQuiz }) => {
     };
 
     return (
-        <div className='bg-amber-500 min-h-60 m-auto rounded-2xl shadow-gray-200 shadow-sm mx-3 flex justify-center items-center'>
+        <div className='bg-amber-500 min-h-60 m-auto rounded-2xl w-92 shadow-gray-200 shadow-sm mx-3 flex justify-center items-center overflow-hidden'>
             <div className='w-96 px-10 gap-5 bg-blue-200 flex flex-col items-center rounded-2xl font-bold py-6'>
                 <h1 className='text-sky-500 text-xl text-center'>Sebelum Memulai, Silahkan Login!</h1>
                 <hr className='h-[2px] -mt-2 mb-3 bg-gray-500 w-full' />
