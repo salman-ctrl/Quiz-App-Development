@@ -17,3 +17,7 @@
 .wrong {
   @apply border-red-200 bg-red-500;
 }
+
+.kosong {
+  border: 2px solid red;
+}

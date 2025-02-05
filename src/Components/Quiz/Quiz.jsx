@@ -1,6 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { data } from '../../../public/data'
-const Quiz = () => {
+
+
+
+const Quiz = ({ nama, setQuiz }) => {
 
     let [index, setIndex] = useState(0);
     let [question, setQuestion] = useState(data[index]);
@@ -15,8 +18,6 @@ const Quiz = () => {
 
     let option_array = [option1, option2, option3, option4]
 
-
-
     const checkAns = (e, answer) => {
         if (lock === false) {
             if (question.answer === answer) {
@@ -30,7 +31,6 @@ const Quiz = () => {
                 option_array[question.answer - 1].current.classList.add("correct")
             }
         }
-
     }
 
     const next = () => {
@@ -52,15 +52,14 @@ const Quiz = () => {
         }
 
     };
-
-
-
     const reset = () => {
         setIndex(0);
         setQuestion(data[0]);
         setScore(0);
         setLock(false);
         setResult(false);
+        setQuiz(false)
+
     }
 
     return (
@@ -82,7 +81,7 @@ const Quiz = () => {
                 <h2 className='m-auto text-xl mt-5 mb-2 font-semibold' >Correct {score} out of {data.length}</h2>
 
                 <h2 className='m-auto text-3xl mb-5 font-bold'> {score * 10}/{data.length * 10} </h2>
-                <h2 className='m-auto text-2xl font-medium'>Scored</h2>
+                <h2 className='m-auto text-2xl font-medium'>Scored {nama ? nama : "user"}</h2>
                 <button onClick={reset} className='px-4 cursor-pointer py-2 bg-sky-500  w-42 font-semibold text-white rounded-md m-auto transition-all duration-500 ease-in-out hover:bg-sky-600 hover:scale-105'> Reset </button>
             </> : <> </>}
 
