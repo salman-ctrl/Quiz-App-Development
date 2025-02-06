@@ -82,7 +82,7 @@ const Quiz = ({ nama, setQuiz }) => {
                 <h2 className='m-auto text-xl mt-5 mb-2 font-semibold' >Correct {score} out of {data.length}</h2>
 
                 <h2 className='m-auto text-3xl mb-5 font-bold'> {score * 10}/{data.length * 10} </h2>
-                <h2 className='m-auto text-2xl font-medium'>Scored {nama ? nama : "user"}</h2>
+                <h2 className='m-auto text-2xl font-medium'>  Scored  {nama ? nama : "user"}</h2>
                 <button onClick={reset} className='px-4 cursor-pointer py-2 bg-sky-500  w-42 font-semibold text-white rounded-md m-auto transition-all duration-500 ease-in-out hover:bg-sky-600 hover:scale-105'> Reset </button>
             </> : <> </>}
 
@@ -91,4 +91,4 @@ const Quiz = ({ nama, setQuiz }) => {
     )
 }
 
-export default Quiz
+export default Quiz;
