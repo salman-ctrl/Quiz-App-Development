@@ -13,6 +13,7 @@ const Dashboard = () => {
             {/* Konten (Kanan - 4/5 layar) */}
             <div className="flex-1 ">
                 <Outlet />
+
             </div>
         </div>
     );
