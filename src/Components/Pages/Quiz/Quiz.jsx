@@ -52,7 +52,15 @@ const Quiz = ({ nama, setQuiz }) => {
         }
 
     };
+    const reset = () => {
+        setIndex(0);
+        setQuestion(data[0]);
+        setScore(0);
+        setLock(false);
+        setResult(false);
+        setQuiz(false)
 
+    }
 
     return (
         <div className='h-screen w-full bg-gradient-to-br from-sky-200 to-purple-800 flex'>
