@@ -52,15 +52,7 @@ const Quiz = ({ nama, setQuiz }) => {
         }
 
     };
-    const reset = () => {
-        setIndex(0);
-        setQuestion(data[0]);
-        setScore(0);
-        setLock(false);
-        setResult(false);
-        setQuiz(false)
 
-    }
 
     return (
         <div className='h-screen w-full bg-gradient-to-br from-sky-200 to-purple-800 flex'>
@@ -72,7 +64,7 @@ const Quiz = ({ nama, setQuiz }) => {
                     <ul className='list-alpha pl-5'>
                         <li ref={option1} onClick={(e) => { checkAns(e, 1) }}>{question.option1}</li>
                         <li ref={option2} onClick={(e) => { checkAns(e, 2) }}>{question.option2}</li>
-                        <li ref={option3} onClick={(e) => { checkAns(e, 3) }}>{question.option3}</li>
+                        <li ref={option3} onClick={(e) => { checkAns(e, 3) }}>{s.option3}</li>
                         <li ref={option4} onClick={(e) => { checkAns(e, 4) }}>{question.option4}</li>
                     </ul>
                     <button onClick={next} className='px-4 cursor-pointer py-2 bg-sky-500 w-42 font-semibold text-white rounded-md flex justify-center m-auto transition-all duration-300 ease-in-out hover:bg-sky-600 hover:scale-105'>{index === data.length - 1 ? "Finish?" : "Next"} &gt;&gt;</button>
