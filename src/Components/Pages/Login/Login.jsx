@@ -1,4 +1,5 @@
 import React, { useRef, useState } from 'react';
+import { data } from '../../../../public/data';
 
 const Login = ({ setNama, setQuiz }) => {
     const [inputNama, setInputNama] = useState('');
