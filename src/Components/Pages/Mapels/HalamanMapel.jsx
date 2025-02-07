@@ -1,5 +1,4 @@
 import React from 'react'
-import Quiz from '../Quiz/Quiz';
 import { Link } from 'react-router-dom';
 
 
