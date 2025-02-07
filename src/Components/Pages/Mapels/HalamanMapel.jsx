@@ -7,7 +7,6 @@ const HalamanMapel = () => {
     return (
         <div className='h-screen bg-blue-200 w-full '>
             <Link to='QUIZ'>ini quiz nya</Link>
-            <Link to='QUIZ'>ini quiz nya</Link>
         </div>
     )
 }
