@@ -5,15 +5,14 @@ import Sidebar from "./Sidebar";
 const Dashboard = () => {
     return (
         <div className="flex h-screen">
-            {/* Sidebar (Kiri - 1/5 layar) */}
-            <div className="w-1/8 bg-gray-800 text-white p-4">
+            {/* Sidebar - 1/8 dari layar */}
+            <div className="basis-1/8 bg-gray-800 text-white ">
                 <Sidebar />
             </div>
 
-            {/* Konten (Kanan - 4/5 layar) */}
-            <div className="flex-1 ">
+            {/* Konten - Sisa layar */}
+            <div className="flex-1  bg-blue-100">
                 <Outlet />
-
             </div>
         </div>
     );

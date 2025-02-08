@@ -1,9 +1,13 @@
-import React, { useRef, useState } from 'react';
-import { data } from '../../../../public/data';
+import React, { useRef, useContext, useState } from 'react';
+import { userContext } from '../../../context/userContext';
+import { useNavigate } from 'react-router-dom';
 
-const Login = ({ setNama, setQuiz }) => {
+const Login = () => {
     const [inputNama, setInputNama] = useState('');
     const inputRef = useRef(null);
+    const navigate = useNavigate();
+
+    const { setNama } = useContext(userContext);  // Ambil setNama dari Context
 
     const handleSubmit = () => {
         if (inputNama.trim() === '') {
@@ -12,9 +16,9 @@ const Login = ({ setNama, setQuiz }) => {
             return;
         }
 
-        setNama(inputNama);
+        setNama(inputNama);  // Simpan nama ke Context API
         setInputNama('');
-        setQuiz(true);
+        navigate('/dashboard');  // Pindah ke Dashboard setelah lo
     };
 
     const handleChange = (e) => {
