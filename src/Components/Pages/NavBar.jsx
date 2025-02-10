@@ -9,7 +9,7 @@ const NavBar = () => {
     const { nama } = useContext(userContext)
 
     return (
-        <div className='w-full h-20 bg-gray-500 flex justify-between gap-x-5 items-center pr-10 px-20'>
+        <div className='w-full h-20 bg-gray-600 flex justify-between gap-x-5 items-center pr-10 px-20 text-xl  font-semibold  text-white'>
 
             <div className='flex gap-x-10 '>
                 <p>Home</p>
@@ -20,7 +20,7 @@ const NavBar = () => {
                 <p>Akun Saya</p>
                 <div className='flex gap-x-3'>
                     <p>hai, {nama}!</p>
-                    <FontAwesomeIcon icon={faUser} className='pt-1' />
+                    <FontAwesomeIcon icon={faUser} size='lg' className=' text-7xl' />
 
                 </div>
 
