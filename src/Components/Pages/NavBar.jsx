@@ -19,9 +19,9 @@ const NavBar = () => {
                 <p>Kontak</p>
                 <p>Akun Saya</p>
                 <div className='flex gap-x-3'>
-                    <p>hai, {nama}!</p>
-                    <FontAwesomeIcon icon={faUser} className='pt-1' />
 
+                    <FontAwesomeIcon icon={faUser} className='pt-1' />
+                    <p>hai, {nama}!</p>
                 </div>
 
             </div>
