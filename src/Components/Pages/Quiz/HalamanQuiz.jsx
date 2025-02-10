@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
+import NavBar from "../NavBar";
 
 const HalamanQuiz = () => {
     return (
         <div className="w-full h-auto min-h-screen bg-gradient-to-br from-sky-200 to-purple-800">
+            <NavBar />
             <h1 className="flex items-center justify-center pt-16 font-bold text-3xl">Daftar Quiz</h1>
 
             <div className="grid justify-center gap-10 pt-10 grid-cols-3">
