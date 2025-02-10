@@ -4,14 +4,14 @@ import Sidebar from "./Sidebar";
 
 const Dashboard = () => {
     return (
-        <div className="flex h-screen">
+        <div className="flex h-auto ">
             {/* Sidebar - 1/8 dari layar */}
             <div className="basis-1/8 bg-gray-800 text-white ">
                 <Sidebar />
             </div>
 
             {/* Konten - Sisa layar */}
-            <div className="flex-1  bg-blue-100">
+            <div className="flex-1 ">
                 <Outlet />
             </div>
         </div>
