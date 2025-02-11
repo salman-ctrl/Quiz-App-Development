@@ -6,7 +6,7 @@ const Dashboard = () => {
     return (
         <div className="flex h-auto ">
             {/* Sidebar - 1/8 dari layar */}
-            <div className="basis-1/8 bg-gray-800 text-white ">
+            <div className="basis-1/7 bg-gray-800 text-white ">
                 <Sidebar />
             </div>
 

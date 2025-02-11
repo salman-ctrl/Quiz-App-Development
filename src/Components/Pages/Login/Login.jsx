@@ -27,7 +27,7 @@ const Login = () => {
         setInputNama(e.target.value);
         inputRef.current.classList.remove('kosong');
     };
-
+    
     return (
         <div className="h-screen w-screen flex justify-center items-center">
             <div className='bg-amber-500 min-h-60 m-auto rounded-2xl w-92 shadow-gray-200 shadow-sm mx-3 flex justify-center items-center overflow-hidden'>
