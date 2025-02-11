@@ -67,7 +67,7 @@ const Quiz = ({ setQuiz }) => {
     return (
         <div className='h-screen w-full bg-gradient-to-br from-sky-200 to-purple-800 flex'>
             <div className='w-150 shadow-gray-600 shadow-md  m-auto mt-24 bg-white text-gray-600 flex flex-col gap-6 rounded-md px-8 py-5 '>
-                <h4 className=''>Hai, {nama ? `${nama}!` : "user!"}</h4>
+                <h4 className=''>Selamat Mengerjakan, {nama ? `${nama}!` : "user!"}</h4>
                 <h1 className='flex justify-center -mb-2 font-bold text-4xl'>Quiz App</h1>
                 <hr className='h-0.5 border-none bg-gray-500' />
                 {result ? <></> : <> <h2 className='text-2xl font-semibold'>{index + 1}. {question.question}</h2>
