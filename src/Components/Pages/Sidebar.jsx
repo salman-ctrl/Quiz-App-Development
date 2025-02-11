@@ -16,7 +16,7 @@ const Sidebar = () => {
                 </h2>
                 <ul className="flex flex-col gap-y-3 pt-2 text-xl">
                     <li>
-                        <Link to="mapel" className="text-blue-300 flex items-center gap-x-3">
+                        <Link to="mapel" className="text-blue-300 flex items-center gap-x-4">
                             <FontAwesomeIcon icon={faBook} size="lg" className="text-blue-300" />
                             Pembelajaran
                         </Link>
