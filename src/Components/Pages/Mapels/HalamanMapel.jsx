@@ -8,7 +8,7 @@ const HalamanMapel = () => {
     return (
         <div className='h-screen bg-blue-200 w-full '>
             <NavBar />
-            <Link to='QUIZ'>ini quiz nya</Link>
+            <Link to='QUIZ'>Ini Halaman Belajarnya</Link>
         </div>
     )
 }
