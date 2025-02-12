@@ -17,6 +17,7 @@ const HalamanQuiz = () => {
                             <hr className="mt-5" />
                             <div className="w-full flex justify-between px-5 pt-2 pb-4 text-md">
                                 <p>Soal : {quiz.jumlahSoal}</p>
+                                <p>Waktu : {quiz.batasWaktu} menit</p>
                             </div>
 
                         </div>
