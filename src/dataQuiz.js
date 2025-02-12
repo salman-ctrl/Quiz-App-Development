@@ -2,7 +2,7 @@ export const dataQuiz = [
     {
         id: 1,
         nama: "Tantangan Matematika",
-        gambar: "/images/matematika.jpg",
+        gambar: "/DaftarQuiz/MTK.jpg",
         deskripsi: "Uji kemampuan matematika Anda dengan soal-soal menantang.",
         kategori: "Matematika",
         jumlahSoal: 15,
@@ -11,7 +11,7 @@ export const dataQuiz = [
     {
         id: 2,
         nama: "Sejarah Indonesia",
-        gambar: "/images/sejarah-indonesia.jpg",
+        gambar: "/DaftarQuiz/Sejarah.jpg",
         deskripsi: "Seberapa banyak Anda tahu tentang sejarah Indonesia?",
         kategori: "Sejarah Indonesia",
         jumlahSoal: 12,
@@ -20,7 +20,7 @@ export const dataQuiz = [
     {
         id: 3,
         nama: "Pengetahuan Alam",
-        gambar: "/images/pengetahuan-alam.jpg",
+        gambar: "/DaftarQuiz/PengetahuanAlam.jpg",
         deskripsi: "Pelajari fakta menarik tentang dunia alam sekitar kita!",
         kategori: "Pengetahuan Alam",
         jumlahSoal: 10,
@@ -29,7 +29,7 @@ export const dataQuiz = [
     {
         id: 4,
         nama: "Astronomi",
-        gambar: "/images/astronomi.jpg",
+        gambar: "/DaftarQuiz/Astronomi.jpg",
         deskripsi: "Jelajahi luar angkasa dan ketahui lebih dalam tentang alam semesta.",
         kategori: "Astronomi",
         jumlahSoal: 12,
@@ -38,7 +38,7 @@ export const dataQuiz = [
     {
         id: 5,
         nama: "Teknologi",
-        gambar: "/images/teknologi.jpg",
+        gambar: "/DaftarQuiz/Teknologi.jpg",
         deskripsi: "Tes wawasan Anda tentang perkembangan teknologi modern.",
         kategori: "Teknologi",
         jumlahSoal: 15,
@@ -47,7 +47,7 @@ export const dataQuiz = [
     {
         id: 6,
         nama: "Pengetahuan Umum",
-        gambar: "/images/pengetahuan-umum.jpg",
+        gambar: "/DaftarQuiz/PengetahuanUmum.jpg",
         deskripsi: "Uji pengetahuan umum Anda dengan pertanyaan menarik!",
         kategori: "Pengetahuan Umum",
         jumlahSoal: 10,
@@ -56,7 +56,7 @@ export const dataQuiz = [
     {
         id: 7,
         nama: "Seni dan Budaya Indonesia",
-        gambar: "/images/seni-budaya.jpg",
+        gambar: "/DaftarQuiz/SeniBudaya.jpg",
         deskripsi: "Kenali seni dan budaya Indonesia dari Sabang hingga Merauke.",
         kategori: "Seni dan Budaya Indonesia",
         jumlahSoal: 12,
@@ -65,10 +65,19 @@ export const dataQuiz = [
     {
         id: 8,
         nama: "Geografi",
-        gambar: "/images/geografi.jpg",
+        gambar: "/DaftarQuiz/Geografi.jpg",
         deskripsi: "Uji wawasan Anda tentang peta, benua, dan fenomena geografis dunia.",
         kategori: "Geografi",
         jumlahSoal: 12,
         batasWaktu: 17,
+    },
+    {
+        id: 9,
+        nama: "Sejarah Dunia",
+        gambar: "/DaftarQuiz/SejarahDunia.jpg",
+        deskripsi: "Jelajahi perjalanan sejarah dunia dari zaman kuno hingga modern.",
+        kategori: "Sejarah",
+        jumlahSoal: 20,
+        batasWaktu: 25,
     }
 ];
