@@ -23,15 +23,7 @@ const HalamanQuiz = () => {
                         </div>
                     </Link>
                 ))}
-
-
-
-
-
-
             </div>
-
-
         </div>
     );
 };
