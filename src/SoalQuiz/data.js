@@ -1,17 +1,23 @@
+// Quiz Sejarah Indonesia
 export const data = [
-    { question: "Apa nama bintang terdekat dengan bumi?", option1: "Proxima Centauri", option2: "Betelgeuse", option3: "Alpha Centauri", option4: "Sirius", answer: 1, level: "hard" },
-    { question: "Siapa ilmuwan yang mengembangkan Teori Relativitas?", option1: "Isaac Newton", option2: "Nikola Tesla", option3: "Albert Einstein", option4: "Stephen Hawking", answer: 3, level: "hard" },
-    { question: "Siapa penulis novel '1984'?", option1: "George Orwell", option2: "Aldous Huxley", option3: "Ray Bradbury", option4: "Jules Verne", answer: 1, level: "hard" },
-    { question: "Apa nama zat yang membuat cabai terasa pedas?", option1: "Capsaicin", option2: "Piperine", option3: "Curcumin", option4: "Allicin", answer: 1, level: "hard" },
-    { question: "Apa simbol kimia untuk emas?", option1: "Ag", option2: "Au", option3: "Pb", option4: "Fe", answer: 2, level: "hard" },
-    { question: "Apa nama teori yang menjelaskan asal mula alam semesta?", option1: "Relativitas Umum", option2: "Teori String", option3: "Big Bang", option4: "Mekanika Kuantum", answer: 3, level: "hard" },
-    { question: "Siapa penemu hukum gerak?", option1: "Albert Einstein", option2: "Isaac Newton", option3: "Galileo Galilei", option4: "Johannes Kepler", answer: 2, level: "hard" },
-    { question: "Apa nama hukum yang menyatakan 'Setiap aksi memiliki reaksi yang sama dan berlawanan'?", option1: "Hukum Termodinamika", option2: "Hukum Newton Ketiga", option3: "Hukum Kepler", option4: "Hukum Pascal", answer: 2, level: "hard" },
-    { question: "Siapa yang menemukan hukum gravitasi?", option1: "Nikola Tesla", option2: "Galileo Galilei", option3: "Isaac Newton", option4: "Aristoteles", answer: 3, level: "hard" },
-    { question: "Apa elemen paling melimpah di alam semesta?", option1: "Oksigen", option2: "Hidrogen", option3: "Karbon", option4: "Helium", answer: 2, level: "hard" }
+    // Easy
+    { question: "Siapa Proklamator Kemerdekaan Indonesia?", option1: "Sukarno dan Hatta", option2: "Sukarno dan Soedirman", option3: "Hatta dan Soeharto", option4: "Soedirman dan Diponegoro", answer: 1, level: "easy" },
+    { question: "Kapan Indonesia merdeka?", option1: "15 Agustus 1945", option2: "17 Agustus 1945", option3: "18 Agustus 1945", option4: "20 Agustus 1945", answer: 2, level: "easy" },
+    { question: "Apa nama perjanjian yang mengakui kedaulatan Indonesia pada 1949?", option1: "Perjanjian Roem-Royen", option2: "Perjanjian Linggarjati", option3: "Konferensi Meja Bundar", option4: "Perjanjian Renville", answer: 3, level: "easy" },
+    { question: "Kerajaan Hindu tertua di Indonesia adalah?", option1: "Majapahit", option2: "Sriwijaya", option3: "Kutai", option4: "Mataram Kuno", answer: 3, level: "easy" },
+    { question: "Siapa pahlawan wanita dari Aceh?", option1: "Dewi Sartika", option2: "Cut Nyak Dien", option3: "RA Kartini", option4: "Martha Christina Tiahahu", answer: 2, level: "easy" },
 
-]
+    // Medium
+    { question: "Apa nama organisasi pemuda yang berdiri tahun 1928?", option1: "Perhimpunan Indonesia", option2: "Boedi Oetomo", option3: "PPKI", option4: "Perhimpunan Pelajar-Pelajar Indonesia (PPPI)", answer: 4, level: "medium" },
+    { question: "Siapa yang memimpin perang Diponegoro?", option1: "Pattimura", option2: "Diponegoro", option3: "Sisingamangaraja", option4: "Imam Bonjol", answer: 2, level: "medium" },
+    { question: "Apa nama kapal yang menenggelamkan kapal Belanda pada Perang Laut Aru?", option1: "KRI Nanggala", option2: "KRI Irian", option3: "KRI Macan", option4: "KRI Macan Tutul", answer: 4, level: "medium" },
+    { question: "Kapan Sumpah Pemuda dideklarasikan?", option1: "27 Oktober 1928", option2: "28 Oktober 1928", option3: "29 Oktober 1928", option4: "30 Oktober 1928", answer: 2, level: "medium" },
+    { question: "Siapa Presiden RI ke-3?", option1: "BJ Habibie", option2: "Abdurrahman Wahid", option3: "Soeharto", option4: "Megawati Soekarnoputri", answer: 1, level: "medium" },
 
-
-
-
+    // Hard
+    { question: "Apa nama perlawanan rakyat Bali terhadap Belanda tahun 1906?", option1: "Puputan Badung", option2: "Perang Banjar", option3: "Perang Diponegoro", option4: "Puputan Klungkung", answer: 1, level: "hard" },
+    { question: "Siapa yang memimpin Perang Padri di Sumatera Barat?", option1: "Imam Bonjol", option2: "Tuanku Tambusai", option3: "Sisingamangaraja", option4: "Tuanku Imam Bondjol", answer: 4, level: "hard" },
+    { question: "Apa nama operasi militer untuk merebut Irian Barat?", option1: "Operasi Trikora", option2: "Operasi Seroja", option3: "Operasi Dwikora", option4: "Operasi Jayawijaya", answer: 1, level: "hard" },
+    { question: "Kerajaan maritim terbesar di Indonesia pada abad ke-7 adalah?", option1: "Sriwijaya", option2: "Majapahit", option3: "Demak", option4: "Tarumanegara", answer: 1, level: "hard" },
+    { question: "Perjanjian Giyanti membagi wilayah kerajaan mana?", option1: "Mataram", option2: "Majapahit", option3: "Demak", option4: "Pajajaran", answer: 1, level: "hard" }
+];

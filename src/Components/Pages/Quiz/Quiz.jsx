@@ -1,17 +1,18 @@
-import React, { useContext, useRef, useState } from 'react'
-import { userContext } from '../../../context/userContext';
+import React, { useContext, useEffect, useRef, useState } from 'react'
+import { userContext } from '../../../Context/userContext';
 import { data } from '../../../SoalQuiz/data'
 
 
 
 const Quiz = ({ setQuiz }) => {
 
-    const { nama } = useContext(userContext)
+    const { nama, level } = useContext(userContext)
     let [index, setIndex] = useState(0);
     let [question, setQuestion] = useState(data[index]);
     let [lock, setLock] = useState(false)
     let [score, setScore] = useState(0)
     let [result, setResult] = useState(false);
+    let [filteredData, setFilteredData] = useState([])
 
     let option1 = useRef(null)
     let option2 = useRef(null)
@@ -19,6 +20,12 @@ const Quiz = ({ setQuiz }) => {
     let option4 = useRef(null)
 
     let option_array = [option1, option2, option3, option4]
+
+    useEffect(() => {
+        const filtered = data.filter(item => item.level === level);
+        setFilteredData(filtered);
+        setQuestion(filtered[0]);
+    }, [level]);
 
     const checkAns = (e, answer) => {
         if (lock === false) {
@@ -67,7 +74,7 @@ const Quiz = ({ setQuiz }) => {
     return (
         <div className='h-screen w-full bg-gradient-to-br from-sky-200 to-purple-800 flex'>
             <div className='w-150 shadow-gray-600 shadow-md  m-auto mt-24 bg-white text-gray-600 flex flex-col gap-6 rounded-md px-8 py-5 '>
-                <h4 className=''>Selamat Mengerjakan, {nama ? `${nama}!` : "user!"}</h4>
+                <h4 className=''>Selamat Mengerjakan, {nama ? `${nama}!` : "user!"} sekarang di level {level}</h4>
                 <h1 className='flex justify-center -mb-2 font-bold text-4xl'>Quiz App</h1>
                 <hr className='h-0.5 border-none bg-gray-500' />
                 {result ? <></> : <> <h2 className='text-2xl font-semibold'>{index + 1}. {question.question}</h2>

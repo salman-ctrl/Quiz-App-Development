@@ -19,7 +19,6 @@ const HalamanQuiz = () => {
                                 <p>Soal : {quiz.jumlahSoal}</p>
                                 <p>Waktu : {quiz.batasWaktu} menit</p>
                             </div>
-
                         </div>
                     </Link>
                 ))}

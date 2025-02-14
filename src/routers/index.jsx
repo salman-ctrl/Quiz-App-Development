@@ -4,7 +4,6 @@ import Dashboard from "../Components/Pages/Dashboard";
 import HalamanMapel from "../Components/Pages/Mapels/HalamanMapel";
 import HalamanQuiz from "../Components/Pages/Quiz/HalamanQuiz";
 import Quiz from "../Components/Pages/Quiz/Quiz";
-import RootLayout from "../Layout/RootLayout";
 
 export const router = createBrowserRouter([
     {
@@ -29,6 +28,10 @@ export const router = createBrowserRouter([
             },
             {
                 path: "quiz/:1",
+                element: <Quiz />
+            },
+            {
+                path: "quiz/:2",
                 element: <Quiz />
             }
         ]
