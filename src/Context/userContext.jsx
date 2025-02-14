@@ -5,7 +5,7 @@ export const userContext = createContext();
 
 export const UserProvider = ({ children }) => {
     const [nama, setNama] = useState(localStorage.getItem('nama') || ' ');
-    const [level, setLevel] = useState('');
+    const [level, setLevel] = useState('easy');
 
     const contextValue = useMemo(() => ({ nama, setNama, level, setLevel }), [nama, level]);
 
