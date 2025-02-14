@@ -1,6 +1,6 @@
-import React, { useContext, useEffect, useRef, useState } from 'react'
+import React, { useContext, useRef, useState } from 'react'
 import { userContext } from '../../../context/userContext';
-import { data } from '../../../../public/data'
+import { data } from '../../../SoalQuiz/data'
 
 
 
