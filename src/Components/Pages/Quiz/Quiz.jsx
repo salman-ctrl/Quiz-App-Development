@@ -177,7 +177,7 @@ const Quiz = () => {
                         {((score / (filteredData.length || 1)) * 100) <= 70 ? "Belajar lagi bocil" : "Kamu Hebat"} {nama ? nama : "user"}
                     </h2>
                     <button onClick={reset} className='px-4 cursor-pointer py-2 bg-sky-500 w-42 font-semibold text-white rounded-md m-auto transition-all duration-500 ease-in-out hover:bg-sky-600 hover:scale-105'>
-                        Reset
+
                     </button>
                 </> : <> </>}
             </div>
