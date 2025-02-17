@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Logo from '../../../src/assets/logo putih.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLayerGroup, faBrain, faBook, faLandmark } from '@fortawesome/free-solid-svg-icons'
+import { faLayerGroup, faBrain, faBook, faLandmark, faRightFromBracket } from '@fortawesome/free-solid-svg-icons'
 
 
 const Sidebar = () => {
@@ -31,6 +31,12 @@ const Sidebar = () => {
                         <Link to="#" className="text-blue-300 flex items-center gap-x-3">
                             <FontAwesomeIcon icon={faLandmark} size="lg" className="text-blue-300" />
                             Perpustakaan
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to="/" className='text-blue-300 flex items-end gap-x-3' >
+                            <FontAwesomeIcon icon={faRightFromBracket} size="lg" className="text-blue-300" />
+                            Logout
                         </Link>
                     </li>
                 </ul>

@@ -146,12 +146,10 @@ const Quiz = () => {
         <div className='h-screen w-full bg-gradient-to-br from-sky-200 to-purple-800 flex'>
             <div className='w-150 shadow-gray-600 shadow-md m-auto mt-24 bg-white text-gray-600 flex flex-col gap-6 rounded-md px-8 py-5'>
                 <h4 className=''>
-                    Selamat Mengerjakan, {nama ? nama : "user!"} sekarang di level {level}
-                    {currentCategory && ` - Kategori: ${currentCategory}`}
+                    Selamat Mengerjakan, {nama ? nama : "user!"}
                 </h4>
-                <h1 className='flex justify-center -mb-2 font-bold text-4xl'>Quiz App</h1>
-                <hr className='h-0.5 border-none bg-gray-500' />
-
+                <h1 className='flex justify-center  font-bold text-4xl'>Quiz App</h1>
+                <hr className='-mt-4' />
                 {result ? <></> : <>
                     <h2 className='text-2xl font-semibold'>{index + 1}. {question.question}</h2>
                     <ul className='list-alpha pl-5'>
@@ -160,9 +158,12 @@ const Quiz = () => {
                         <li ref={option3} onClick={(e) => { checkAns(e, 3) }}>{question.option3}</li>
                         <li ref={option4} onClick={(e) => { checkAns(e, 4) }}>{question.option4}</li>
                     </ul>
-                    <button onClick={next} className='px-4 cursor-pointer py-2 bg-sky-500 w-42 font-semibold text-white rounded-md flex justify-center m-auto transition-all duration-300 ease-in-out hover:bg-sky-600 hover:scale-105'>
-                        {index === filteredData.length - 1 ? "Finish?" : "Next"} &gt;&gt;
-                    </button>
+                    <div className='w-full justify-center flex'>
+                        <button onClick={next} className='px-4 cursor-pointer py-2 bg-sky-500 w-42 font-semibold justify-center flex text-white rounded-md  mx-auto transition-all duration-300 ease-in-out hover:bg-sky-600 hover:scale-105'>
+                            {index === filteredData.length - 1 ? "Finish?" : "Next"} &gt;&gt;
+                        </button>
+                    </div>
+
                     <div className='m-auto mt-2'>{index + 1} of {filteredData.length} questions</div>
                 </>}
 

@@ -52,29 +52,24 @@ export const dataQuiz = [
             { question: "Berapakah hasil dari 45 ÷ 9?", kategori: "Matematika", option1: "4", option2: "5", option3: "6", option4: "7", answer: 2, level: "medium" },
             { question: "Jika x² - 16 = 0, nilai x adalah?", kategori: "Matematika", option1: "3", option2: "4", option3: "5", option4: "6", answer: 2, level: "medium" },
 
-            // Medium
-            { question: "Akar kuadrat dari 64 adalah?", kategori: "Matematika", option1: "6", option2: "7", option3: "8", option4: "9", answer: 3, level: "medium" },
-            { question: "Berapakah hasil 12 × 12?", kategori: "Matematika", option1: "120", option2: "124", option3: "144", option4: "148", answer: 3, level: "medium" },
-            { question: "Jika x + 5 = 12, maka nilai x adalah?", kategori: "Matematika", option1: "5", option2: "6", option3: "7", option4: "8", answer: 3, level: "medium" },
-            { question: "Hasil dari 15² adalah?", kategori: "Matematika", option1: "200", option2: "215", option3: "225", option4: "250", answer: 3, level: "medium" },
-            { question: "Berapakah hasil dari 7³?", kategori: "Matematika", option1: "333", option2: "343", option3: "353", option4: "363", answer: 2, level: "medium" },
-            { question: "Jika 5x = 45, nilai x adalah?", kategori: "Matematika", option1: "7", option2: "8", option3: "9", option4: "10", answer: 3, level: "medium" },
-            { question: "Akar kubik dari 27 adalah?", kategori: "Matematika", option1: "2", option2: "3", option3: "4", option4: "5", answer: 2, level: "medium" },
-            { question: "Jika 2x + 3 = 11, nilai x adalah?", kategori: "Matematika", option1: "3", option2: "4", option3: "5", option4: "6", answer: 2, level: "medium" },
-            { question: "Hasil dari 81 ÷ 9 adalah?", kategori: "Matematika", option1: "7", option2: "8", option3: "9", option4: "10", answer: 3, level: "medium" },
-            { question: "Jika luas persegi panjang adalah 24 dan panjangnya 8, berapa lebarnya?", kategori: "Matematika", option1: "2", option2: "3", option3: "4", option4: "5", answer: 3, level: "medium" },
-            { question: "Berapakah hasil dari 50 ÷ 5?", kategori: "Matematika", option1: "8", option2: "9", option3: "10", option4: "11", answer: 3, level: "medium" },
-            { question: "Jika y² = 49, nilai y adalah?", kategori: "Matematika", option1: "5", option2: "6", option3: "7", option4: "8", answer: 3, level: "medium" },
-            { question: "Jika 3a = 21, maka nilai a adalah?", kategori: "Matematika", option1: "5", option2: "6", option3: "7", option4: "8", answer: 3, level: "medium" },
-            { question: "Hasil dari 5³ adalah?", kategori: "Matematika", option1: "100", option2: "115", option3: "125", option4: "135", answer: 3, level: "medium" },
-            { question: "Jika luas lingkaran adalah 314 dan π = 3.14, berapa jari-jarinya?", kategori: "Matematika", option1: "8", option2: "9", option3: "10", option4: "11", answer: 3, level: "medium" },
-            { question: "Berapakah keliling persegi dengan sisi 12 cm?", kategori: "Matematika", option1: "44 cm", option2: "46 cm", option3: "48 cm", option4: "50 cm", answer: 3, level: "medium" },
-            { question: "Jika 4y - 5 = 15, nilai y adalah?", kategori: "Matematika", option1: "4", option2: "5", option3: "6", option4: "7", answer: 3, level: "medium" },
-            { question: "Hasil dari 2³ + 3² adalah?", kategori: "Matematika", option1: "15", option2: "17", option3: "18", option4: "19", answer: 2, level: "medium" },
-            { question: "Berapakah hasil dari 45 ÷ 9?", kategori: "Matematika", option1: "4", option2: "5", option3: "6", option4: "7", answer: 2, level: "medium" },
-            { question: "Jika x² - 16 = 0, nilai x adalah?", kategori: "Matematika", option1: "3", option2: "4", option3: "5", option4: "6", answer: 2, level: "medium" }
+            // Medium Level Math Questions with Categories
+            { question: "Jika 2x² - 8x - 10 = 0, berapakah nilai x yang mungkin?", kategori: "Matematika", option1: "2", option2: "3", option3: "-1", option4: "-5", answer: 3, level: "hard" },
+            { question: "Jika log₂(32) = x, maka nilai x adalah?", kategori: "Matematika", option1: "3", option2: "4", option3: "5", option4: "6", answer: 3, level: "hard" },
+            { question: "Berapa nilai limit dari lim x→0 (sin 5x / 5x)?", kategori: "Matematika", option1: "0", option2: "1", option3: "5", option4: "Tak hingga", answer: 2, level: "hard" }, { question: "Jika f(x) = x³ - 3x² + x - 1, berapa turunan pertama f'(x)?", kategori: "Matematika", option1: "3x² - 6x + 1", option2: "2x² - 3x", option3: "x² - 3", option4: "3x² - 2x + 1", answer: 1, level: "hard" },
+            { question: "Jika ∫(3x² - 2x + 1) dx, hasil integral adalah?", kategori: "Matematika", option1: "x³ - x² + x + C", option2: "x³ - x² + 2x + C", option3: "x³ - 2x² + x + C", option4: "x³ - 2x² + 2x + C", answer: 1, level: "hard" },
+            { question: "Jika matriks A = [[2,1],[3,4]], berapa nilai determinannya?", kategori: "Matematika", option1: "7", option2: "8", option3: "5", option4: "6", answer: 1, level: "hard" }, { question: "Berapakah nilai cos 60°?", kategori: "Matematika", option1: "0", option2: "1", option3: "1/2", option4: "√3/2", answer: 3, level: "hard" },
+            { question: "Jika x^4 = 81, maka nilai x adalah?", kategori: "Matematika", option1: "3", option2: "±3", option3: "±9", option4: "9", answer: 2, level: "hard" },
+            { question: "Berapakah nilai dari 3!(4!)?", kategori: "Matematika", option1: "120", option2: "144", option3: "96", option4: "72", answer: 3, level: "hard" },
+            { question: "Jika jumlah sudut dalam segi-8 adalah?", kategori: "Matematika", option1: "1080°", option2: "1200°", option3: "1440°", option4: "720°", answer: 3, level: "hard" },
+            { question: "Jika persamaan garis melalui titik (2,3) dan memiliki gradien 4 adalah?", kategori: "Matematika", option1: "y = 4x - 5", option2: "y = 4x + 3", option3: "y = 4x - 8", option4: "y = 4x - 2", answer: 1, level: "hard" },
+            { question: "Jika sisi-sisi segitiga adalah 7, 24, dan 25, apakah segitiga tersebut siku-siku?", kategori: "Matematika", option1: "Ya", option2: "Tidak", option3: "Tidak dapat ditentukan", option4: "Hanya jika luasnya 84", answer: 1, level: "hard" },
+            { question: "Berapakah nilai dari (2 + 3i)(4 - i)?", kategori: "Matematika", option1: "11 + 10i", option2: "5 + 14i", option3: "11 + 5i", option4: "6 + 7i", answer: 3, level: "hard" },
+            { question: "Jika 3^(2x) = 81, maka nilai x adalah?", kategori: "Matematika", option1: "2", option2: "3", option3: "4", option4: "5", answer: 1, level: "hard" },
+            { question: "Jika vektor a = (2,3) dan vektor b = (4,-1), berapa hasil a · b (dot product)?", kategori: "Matematika", option1: "5", option2: "2", option3: "7", option4: "8", answer: 4, level: "hard" }]
 
-        ]
+
+
+
     },
 
     {
