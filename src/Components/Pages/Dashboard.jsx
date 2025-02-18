@@ -14,6 +14,7 @@ const Dashboard = () => {
             <div className="flex-1 ">
                 <Outlet />
             </div>
+            
         </div>
     );
 };

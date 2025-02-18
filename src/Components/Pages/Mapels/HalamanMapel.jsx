@@ -8,7 +8,7 @@ const HalamanMapel = () => {
     return (
         <div className='h-screen bg-blue-200 w-full '>
             <NavBar />
-            <Link to='QUIZ'>Ini Halaman Belajarnya</Link>
+            <h1 className="flex items-center justify-start pl-10 pt-16 font-bold text-3xl text-gray-700 shadow-md pb-3">Daftar Pelajaran</h1>
         </div>
     )
 }
