@@ -9,7 +9,6 @@ const Dashboard = () => {
             <div className="basis-1/7 bg-gray-800 text-white ">
                 <Sidebar />
             </div>
-
             {/* Konten - Sisa layar */}
             <div className="flex-1 ">
                 <Outlet />
@@ -19,3 +18,5 @@ const Dashboard = () => {
 };
 
 export default Dashboard;
+
+

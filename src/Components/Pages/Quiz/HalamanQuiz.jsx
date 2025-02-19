@@ -27,11 +27,11 @@ const HalamanQuiz = () => {
                             <h2 className="text-gray-800 font-bold flex pt-4 justify-center">{quiz.nama}</h2>
                             <h2 className="text-gray-800 flex text-xs pt-1 w-full px-10 text-center">"{quiz.deskripsi}"</h2>
                             <hr className="mt-5" />
-                            <div className="w-full flex justify-between px-5 pt-2 pb-4 text-md">
+                            <div className="w-full flex justify-between px-5 pt-2 pb-4 text-md ">
                                 <p>Soal : {quiz.jumlahSoal}</p>
                                 <p>Waktu : {quiz.batasWaktu} menit</p>
                             </div>
-                            <a target="_blank">oke cobs</a>
+                            <a target="_blank">oke coba</a>
                         </div>
                     </Link>
                 ))}
