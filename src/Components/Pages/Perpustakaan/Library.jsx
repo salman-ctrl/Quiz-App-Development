@@ -8,7 +8,7 @@ const Library = () => {
     let [daftarBuku, setDaftarBuku] = useState([]);
 
     useEffect(() => {
-        fetch('https://www.googleapis.com/books/v1/volumes?q=flowers&filter=free-ebooks&maxResults=20')
+        fetch('https://www.googleapis.com/books/v1/volumes?q=books')
             .then((response) => {
                 if (!response.ok) {
                     throw new Error("gagal memuat data");
@@ -26,6 +26,7 @@ const Library = () => {
             <h1 className="flex items-center justify-start pl-10 pt-16 font-bold text-3xl text-gray-700 shadow-md pb-3">Daftar Quiz</h1>
             {daftarBuku.map((item, index) => (
                 <div key={index} >
+
                     {item.volumeInfo.imageLinks?.thumbnail && (
                         <img src={item.volumeInfo.imageLinks.thumbnail} alt="" className='w-40 h40' />
                     )}
