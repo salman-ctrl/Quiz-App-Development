@@ -148,7 +148,7 @@ const Quiz = () => {
                 <h4 className=''>
                     Selamat Mengerjakan, {nama ? nama : "user!"}
                 </h4>
-                <h1 className='flex justify-center  font-bold text-4xl'>Quiz App</h1>
+                <h1 className='flex justify-center quiz font-bold text-4xl'>Quiz App</h1>
                 <hr className='-mt-4' />
                 {result ? <></> : <>
                     <h2 className='text-2xl font-semibold'>{index + 1}. {question.question}</h2>

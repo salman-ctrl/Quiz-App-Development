@@ -39,6 +39,12 @@ const Sidebar = () => {
                             Logout
                         </Link>
                     </li>
+                    <li>
+                        <Link to="/" className='text-blue-300 flex items-end gap-x-3' >
+                            <FontAwesomeIcon icon={faRightFromBracket} size="lg" className="text-blue-300" />
+                            Logout
+                        </Link>
+                    </li>
                 </ul>
             </div>
 

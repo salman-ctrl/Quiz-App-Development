@@ -31,6 +31,7 @@ const HalamanQuiz = () => {
                                 <p>Soal : {quiz.jumlahSoal}</p>
                                 <p>Waktu : {quiz.batasWaktu} menit</p>
                             </div>
+                            <a target="_blank">oke cobs</a>
                         </div>
                     </Link>
                 ))}
