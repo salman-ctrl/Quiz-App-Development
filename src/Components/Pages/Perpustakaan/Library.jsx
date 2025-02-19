@@ -23,7 +23,7 @@ const Library = () => {
     return (
         <div className='h-auto min-h-screen w-full bg-gradient-to-br from-sky-200 to-purple-300'>
             <NavBar />
-            <h1 className="flex items-center justify-start pl-10 pt-16 font-bold text-3xl text-gray-700 shadow-md pb-3">Daftar Quiz</h1>
+            <h1 className="flex items-center justify-start pl-10 pt-16 font-bold text-3xl text-gray-700 shadow-md pb-3">Daftar Buku</h1>
             <div className='grid place-items-center grid-cols-3 gap-20 pt-16'>
                 {daftarBuku.map((item, index) => (
                     <div key={index} >
