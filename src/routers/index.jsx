@@ -5,6 +5,7 @@ import HalamanMapel from "../Components/Pages/Mapels/HalamanMapel";
 import HalamanQuiz from "../Components/Pages/Quiz/HalamanQuiz";
 import Quiz from "../Components/Pages/Quiz/Quiz";
 import LevelQuiz from "../Components/Pages/LevelQuiz";
+import Library from "../Components/Pages/Perpustakaan/Library"
 
 export const router = createBrowserRouter([
     {
@@ -22,6 +23,11 @@ export const router = createBrowserRouter([
             {
                 path: "mapel",
                 element: <HalamanMapel />
+            },
+            {
+                path: "library",
+                element: <Library />
+
             },
             {
                 path: "quiz",

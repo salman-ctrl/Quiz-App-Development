@@ -28,15 +28,9 @@ const Sidebar = () => {
                         </Link>
                     </li>
                     <li>
-                        <Link to="#" className="text-blue-300 flex items-center gap-x-3">
+                        <Link to="library" className="text-blue-300 flex items-center gap-x-3">
                             <FontAwesomeIcon icon={faLandmark} size="lg" className="text-blue-300" />
                             Perpustakaan
-                        </Link>
-                    </li>
-                    <li>
-                        <Link to="/" className='text-blue-300 flex items-end gap-x-3' >
-                            <FontAwesomeIcon icon={faRightFromBracket} size="lg" className="text-blue-300" />
-                            Logout
                         </Link>
                     </li>
                     <li>
