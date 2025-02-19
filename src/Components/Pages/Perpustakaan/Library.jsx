@@ -8,7 +8,7 @@ const Library = () => {
     let [daftarBuku, setDaftarBuku] = useState([]);
 
     useEffect(() => {
-        fetch('https://www.googleapis.com/books/v1/volumes?q=books')
+        fetch('https://www.googleapis.com/books/v1/volumes?q=ilmupengetahuanalamkelas3sd&&maxResults=40')
             .then((response) => {
                 if (!response.ok) {
                     throw new Error("gagal memuat data");
@@ -24,15 +24,22 @@ const Library = () => {
         <div className='h-auto min-h-screen w-full bg-gradient-to-br from-sky-200 to-purple-300'>
             <NavBar />
             <h1 className="flex items-center justify-start pl-10 pt-16 font-bold text-3xl text-gray-700 shadow-md pb-3">Daftar Quiz</h1>
-            {daftarBuku.map((item, index) => (
-                <div key={index} >
-                    {item.volumeInfo.categories}
-                    {item.volumeInfo.imageLinks?.thumbnail && (
-                        <img src={item.volumeInfo.imageLinks.thumbnail} alt="" className='w-40 h40' />
-                    )}
-                    {item.volumeInfo.title}
-                </div>
-            ))}
+            <div className='grid place-items-center grid-cols-3 gap-20 pt-16'>
+                {daftarBuku.map((item, index) => (
+                    <div key={index} >
+                        <div className='w-60 h-80 bg-blue-600'>
+                            {item.volumeInfo.imageLinks?.thumbnail && (
+                                <img src={item.volumeInfo.imageLinks.thumbnail} alt="" className='w-full h-60' />
+                            )};
+                            {item.volumeInfo.categories ? item.volumeInfo.categories.join(', ') : "kategori tidak ada "}
+                            {item.volumeInfo.title}
+                        </div>
+
+                    </div>
+                ))}
+            </div>
+
+
         </div>
     )
 }
