@@ -14,7 +14,7 @@ const LevelQuiz = () => {
     }, [level]);
 
     return (
-        <div className='h-screen bg-gradient-to-br from-sky-200 to-purple-800' >
+        <div className='h-screen bg-gradient-to-br from-sky-200 to-purple-300' >
             <NavBar />
             <div className='w-96 h-36 bg-sky-600 m-auto rounded-md mt-40 shadow-2xl'>
                 <h1 className='text-center pt-3'>Pilih Level </h1>

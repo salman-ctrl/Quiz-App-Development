@@ -20,12 +20,9 @@ const Quiz = () => {
 
     let option_array = [option1, option2, option3, option4]
 
-    // Get the questions for the selected category
     const getCategoryQuestions = () => {
-        // Find the quiz object that matches the selected category
         const quizObject = dataQuiz.find(quiz => quiz.kategori === kategori);
 
-        // If found, return its questions, otherwise return empty array and set kategoriExists to false
         if (quizObject && Array.isArray(quizObject.soal)) {
             setKategoriExists(true);
             return quizObject.soal;
@@ -36,35 +33,28 @@ const Quiz = () => {
     }
 
     useEffect(() => {
-        // Get questions for this category
         const categoryQuestions = getCategoryQuestions();
 
-        // Pastikan categoryQuestions adalah array sebelum memanggil filter
         if (Array.isArray(categoryQuestions)) {
-            // Then filter by level
             const filtered = categoryQuestions.filter(item => item.level === level);
             setFilteredData(filtered);
 
             if (filtered.length > 0) {
                 setQuestion(filtered[0]);
             } else {
-                // Reset question if no questions found for this level
                 setQuestion(null);
             }
         } else {
-            // Jika bukan array, set filtered data sebagai array kosong
             setFilteredData([]);
             setQuestion(null);
         }
 
-        // Reset index and result when level or category changes
         setIndex(0);
         setResult(false);
         setScore(0);
         setLock(false);
     }, [level, kategori]);
 
-    // Show result if no questions found
     useEffect(() => {
         if (filteredData.length === 0 && kategoriExists) {
             setResult(false);
@@ -119,10 +109,8 @@ const Quiz = () => {
         setShowQuiz(true)
     }
 
-    // Determine current category name for display
     const currentCategory = kategori || 'Default Category';
 
-    // Jika kategori tidak ditemukan, tampilkan pesan kategori tidak ada
     if (!kategoriExists) {
         return (
             <div className="h-screen w-full bg-gradient-to-br from-sky-200 to-purple-800 flex">
