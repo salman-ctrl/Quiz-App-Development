@@ -239,14 +239,5 @@ export const dataQuiz = [
         kategori: "Sejarah",
         jumlahSoal: 20,
         batasWaktu: 25,
-    },
-    {
-        id: 9,
-        nama: "Ekonomi",
-        gambar: "/DaftarQuiz/SejarahDunia.jpg",
-        deskripsi: "Jelajahi perjalanan sejarah dunia dari zaman kuno hingga modern.",
-        kategori: "Sejarah",
-        jumlahSoal: 20,
-        batasWaktu: 25,
     }
 ];
