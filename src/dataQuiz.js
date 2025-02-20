@@ -91,9 +91,11 @@ export const dataQuiz = [
 
             // Hard
             { question: "Apa nama unsur kimia dengan simbol 'Au'?", kategori: "Pengetahuan Umum", option1: "Perak", option2: "Besi", option3: "Emas", option4: "Tembaga", answer: 3, level: "hard" },
-            { question: "Siapa ilmuwan yang mengembangkan teori relativitas?", kategori: "Pengetahuan Umum", option1: "Galileo Galilei", option2: "Isaac Newton", option3: "Albert Einstein", option4: "Stephen Hawking", answer: 3, level: "hard" }
+            { question: "Siapa ilmuwan yang mengembangkan teori relativitas?", kategori: "Pengetahuan Umum", option1: "Galileo Galilei", option2: "Isaac Newton", option3: "Albert Einstein", option4: "Stephen Hawking", answer: 3, level: "hard" },
             { question: "Apa nama unsur kimia dengan simbol 'Au'?", kategori: "Pengetahuan Umum", option1: "Perak", option2: "Besi", option3: "Emas", option4: "Tembaga", answer: 3, level: "hard" },
-            { question: "Siapa ilmuwan yang mengembangkan teori relativitas?", kategori: "Pengetahuan Umum", option1: "Galileo Galilei", option2: "Isaac Newton", option3: "Albert Einstein", option4: "Stephen Hawking", answer: 3, level: "hard" }
+            { question: "Siapa ilmuwan yang mengembangkan teori relativitas?", kategori: "Pengetahuan Umum", option1: "Galileo Galilei", option2: "Isaac Newton", option3: "Albert Einstein", option4: "Stephen Hawking", answer: 3, level: "hard" },
+            { question: "Apa nama unsur kimia dengan simbol 'Au'?", kategori: "Pengetahuan Umum", option1: "Perak", option2: "Besi", option3: "Emas", option4: "Tembaga", answer: 3, level: "hard" },
+            { question: "Siapa ilmuwan yang mengembangkan teori relativitas?", kategori: "Pengetahuan Umum", option1: "Galileo Galilei", option2: "Isaac Newton", option3: "Albert Einstein", option4: "Stephen Hawking", answer: 3, level: "hard" },
         ]
     },
 
