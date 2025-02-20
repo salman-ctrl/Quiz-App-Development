@@ -43,17 +43,23 @@ const Library = () => {
 
             <div className='grid place-items-center grid-cols-3 gap-20 pt-16'>
                 {daftarBuku.map((item, index) => (
-                    <div key={index} >
-                        <div className='w-70 h-90 bg-gradient-to-br rounded-t-md overflow-hidden rounded-b-md  from-sky-200 to-purple-300 shadow-2xl'>
-                            {item.volumeInfo.imageLinks?.thumbnail && (
-                                <img src={item.volumeInfo.imageLinks.thumbnail} alt="" className='w-full h-60' />
-                            )}
-                            <div className='text-center  '>
-                                {item.volumeInfo.categories ? item.volumeInfo.categories.join(', ') : "kategori tidak ada "}
-                                {item.volumeInfo.title}
+                    <a href={item.volumeInfo.previewLink}
+                        className='cursor-pointer'
+                        rel='noopener noreferrer'
+
+                    >
+                        <div key={index} >
+                            <div className='w-70 h-90 bg-gradient-to-br rounded-t-md overflow-hidden rounded-b-md   bg-sky-100 shadow-xl'>
+                                {item.volumeInfo.imageLinks?.thumbnail && (
+                                    <img src={item.volumeInfo.imageLinks.thumbnail} alt="" className='w-full h-60' />
+                                )}
+                                <div className='text-center  '>
+                                    {item.volumeInfo.categories ? item.volumeInfo.categories.join(', ') : "kategori tidak ada "}
+                                    {item.volumeInfo.title}
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </a>
                 ))}
             </div>
         </div>
