@@ -223,6 +223,15 @@ export const dataQuiz = [
         batasWaktu: 17,
     },
     {
+        id: 7,
+        nama: "Seni dan Budaya Indonesia",
+        gambar: "/DaftarQuiz/SeniBudaya.jpg",
+        deskripsi: "Kenali seni dan budaya Indonesia dari Sabang hingga Merauke.",
+        kategori: "Seni dan Budaya Indonesia",
+        jumlahSoal: 12,
+        batasWaktu: 17,
+    },
+    {
         id: 8,
         nama: "Geografi",
         gambar: "/DaftarQuiz/Geografi.jpg",
