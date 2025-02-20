@@ -14,7 +14,6 @@ const HalamanQuiz = () => {
         }
     }, [kategori])
 
-
     return (
         <div className="w-full h-auto min-h-screen bg-gradient-to-br from-sky-200 to-purple-300">
             <NavBar />
@@ -31,7 +30,6 @@ const HalamanQuiz = () => {
                                 <p>Soal : {quiz.jumlahSoal}</p>
                                 <p>Waktu : {quiz.batasWaktu} menit</p>
                             </div>
-                            <a target="_blank">oke coba</a>
                         </div>
                     </Link>
                 ))}
