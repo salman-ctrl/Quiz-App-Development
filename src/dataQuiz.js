@@ -6,7 +6,7 @@ export const dataQuiz = [
         deskripsi: "Uji kemampuan matematika Anda dengan soal-soal menantang.",
         kategori: "Matematika",
         jumlahSoal: 15,
-        batasWaktu: 20,
+        batasWaktu: "19:12",
         soal: [
             // Easy
             { question: "Berapakah hasil dari 5 + 3?", kategori: "Matematika", option1: "6", option2: "7", option3: "8", option4: "9", answer: 3, level: "easy" },

@@ -29,9 +29,9 @@ const Login = () => {
     };
 
     return (
-        <div className="h-screen w-screen flex justify-center items-center">
-            <div className='bg-amber-500 min-h-60 m-auto rounded-2xl w-92 shadow-gray-200 shadow-sm mx-3 flex justify-center items-center overflow-hidden'>
-                <div className='w-96 px-10 gap-5 bg-blue-200 flex flex-col items-center rounded-2xl font-bold py-6'>
+        <div className="h-screen w-screen flex justify-center items-center bg-gradient-to-br from-sky-200 to-purple-300">
+            <div className='bg-amber-500 min-h-60 m-auto rounded-2xl w-92  shadow-md mx-3 flex justify-center items-center overflow-hidden'>
+                <div className='w-96 px-10 gap-5 bg-gradient-to-br to-sky-200 from-purple-300 flex flex-col items-center rounded-2xl font-bold py-6'>
                     <h1 className='text-gray-700 text-xl text-center'>Sebelum Memulai, Masukan Namamu!</h1>
                     <hr className='h-[2px] -mt-2 mb-3 bg-gray-500 w-full' />
                     <div className='flex flex-col gap-2 w-full'>
